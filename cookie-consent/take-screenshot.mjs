@@ -7,6 +7,7 @@ const browser = await puppeteer.launch({ headless: false });
 
 const page = await browser.newPage();
 
+//apply add blocker to remove adds & cookies
 const blocker = await PuppeteerBlocker.fromLists(fetch, [
   "https://easylist.to/easylist/easylist.txt",
   "https://secure.fanboy.co.nz/fanboy-cookiemonster.txt",
@@ -35,6 +36,9 @@ if (findBtn) {
 
 await page.screenshot({ path: "consent.png" });
 await browser.close();
+
+// await page.screenshot({ path: "consent.png" });
+// await browser.close();
 
 //remove cookie consent with evaluate
 // await page.evaluate(() => {
