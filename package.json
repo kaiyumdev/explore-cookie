@@ -1,5 +1,7 @@
 {
 	"dependencies": {
+		"@cliqz/adblocker-puppeteer": "^1.26.7",
+		"cross-fetch": "^4.0.0",
 		"puppeteer": "^21.3.4"
 	}
 }
