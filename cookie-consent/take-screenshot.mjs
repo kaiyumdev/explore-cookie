@@ -37,9 +37,6 @@ if (findBtn) {
 await page.screenshot({ path: "consent.png" });
 await browser.close();
 
-// await page.screenshot({ path: "consent.png" });
-// await browser.close();
-
 //remove cookie consent with evaluate
 // await page.evaluate(() => {
 //   document.querySelector("#onetrust-consent-sdk")?.remove();
@@ -77,7 +74,6 @@ await browser.close();
 //     const filename = "consent.png";
 //     const filePath = path.join(directory, filename);
 
-//     // Create the 'data' directory if it doesn't exist
 //     if (!fs.existsSync(directory)) {
 //       fs.mkdirSync(directory);
 //     }
